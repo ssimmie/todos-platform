@@ -1,6 +1,7 @@
 name: pr-build
-on:
-  - pull_request
+
+on: [pull_request]
+
 jobs:
   preview:
     name: Preview
