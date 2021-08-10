@@ -1,8 +1,8 @@
-name: Pulumi
+name: ci-build
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   preview:
     name: Update

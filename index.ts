@@ -7,7 +7,7 @@ const bucket = new aws.s3.Bucket("my-bucket", {
     },
 });
 
-new aws.s3.BucketObject("index.html", {
+const bucketObject = new aws.s3.BucketObject("index.html", {
     acl: "public-read",
     contentType: "text/html",
     bucket: bucket,
@@ -15,4 +15,5 @@ new aws.s3.BucketObject("index.html", {
 });
 
 export const bucketName = bucket.id;
+export const bucketObjectName = bucketObject.id;
 export const bucketEndpoint = pulumi.interpolate`http://${bucket.websiteEndpoint}`;
