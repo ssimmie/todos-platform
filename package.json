@@ -1,5 +1,6 @@
 {
     "name": "todos-platform",
+    "main": "src/entry.ts",
     "devDependencies": {
         "@types/node": "^10.0.0"
     },
