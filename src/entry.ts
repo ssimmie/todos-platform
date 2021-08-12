@@ -5,6 +5,9 @@ const bucket = new aws.s3.Bucket("my-bucket", {
     website: {
         indexDocument: "index.html",
     },
+    tags: {
+        Hello: "World",
+    }
 });
 
 const bucketObject = new aws.s3.BucketObject("index.html", {
